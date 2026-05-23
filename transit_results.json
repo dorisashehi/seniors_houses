@@ -1,0 +1,409 @@
+{
+  "city": "New York",
+  "source": "transitland.transit.land + MTA via Nimble Search",
+  "scraped_at": "2026-05-23T18:39:06.056521+00:00",
+  "subway_lines": [
+    {
+      "name": "1",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "2",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "3",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "4",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "5",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "6",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "7",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "A",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "C",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "E",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "B",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "D",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "F",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "M",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "G",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "J",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "Z",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "L",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "N",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "Q",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "R",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "W",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "S (42nd St)",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "S (Franklin Ave)",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    },
+    {
+      "name": "S (Rockaway)",
+      "type": "subway",
+      "operator": "MTA NYC Transit"
+    }
+  ],
+  "bus_routes_by_borough": [
+    {
+      "borough": "Manhattan",
+      "operator": "MTA Bus / NYCT Bus",
+      "major_routes": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M15",
+        "M101",
+        "M102",
+        "M103"
+      ]
+    },
+    {
+      "borough": "Brooklyn",
+      "operator": "MTA Bus / NYCT Bus",
+      "major_routes": [
+        "B1",
+        "B2",
+        "B3",
+        "B6",
+        "B9",
+        "B35",
+        "B41",
+        "B44",
+        "B46"
+      ]
+    },
+    {
+      "borough": "Queens",
+      "operator": "MTA Bus / NYCT Bus",
+      "major_routes": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q10",
+        "Q44",
+        "Q46",
+        "Q58",
+        "Q60"
+      ]
+    },
+    {
+      "borough": "Bronx",
+      "operator": "MTA Bus / NYCT Bus",
+      "major_routes": [
+        "Bx1",
+        "Bx2",
+        "Bx4",
+        "Bx5",
+        "Bx6",
+        "Bx9",
+        "Bx12",
+        "Bx15",
+        "Bx19"
+      ]
+    },
+    {
+      "borough": "Staten Island",
+      "operator": "MTA Bus / NYCT Bus",
+      "major_routes": [
+        "S40",
+        "S42",
+        "S44",
+        "S46",
+        "S48",
+        "S51",
+        "S53",
+        "S74",
+        "S76"
+      ]
+    }
+  ],
+  "major_hubs": [
+    {
+      "name": "Penn Station",
+      "type": "hub",
+      "lat": 40.7506,
+      "lon": -73.9971,
+      "lines": [
+        "1",
+        "2",
+        "3",
+        "A",
+        "C",
+        "E"
+      ]
+    },
+    {
+      "name": "Grand Central Terminal",
+      "type": "hub",
+      "lat": 40.7527,
+      "lon": -73.9772,
+      "lines": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "S"
+      ]
+    },
+    {
+      "name": "Times Square",
+      "type": "hub",
+      "lat": 40.758,
+      "lon": -73.9855,
+      "lines": [
+        "1",
+        "2",
+        "3",
+        "7",
+        "N",
+        "Q",
+        "R",
+        "W",
+        "A",
+        "C",
+        "E",
+        "S"
+      ]
+    },
+    {
+      "name": "Atlantic Terminal",
+      "type": "hub",
+      "lat": 40.6843,
+      "lon": -73.9774,
+      "lines": [
+        "B",
+        "D",
+        "N",
+        "Q",
+        "R",
+        "2",
+        "3",
+        "4",
+        "5",
+        "G"
+      ]
+    },
+    {
+      "name": "Jamaica Station",
+      "type": "hub",
+      "lat": 40.7022,
+      "lon": -73.8017,
+      "lines": [
+        "E",
+        "J",
+        "Z",
+        "LIRR",
+        "AirTrain"
+      ]
+    },
+    {
+      "name": "Fulton Center",
+      "type": "hub",
+      "lat": 40.7097,
+      "lon": -74.0076,
+      "lines": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "A",
+        "C",
+        "J",
+        "Z"
+      ]
+    },
+    {
+      "name": "Union Square",
+      "type": "hub",
+      "lat": 40.7353,
+      "lon": -73.9903,
+      "lines": [
+        "4",
+        "5",
+        "6",
+        "L",
+        "N",
+        "Q",
+        "R",
+        "W"
+      ]
+    },
+    {
+      "name": "George Washington Bridge Bus Station",
+      "type": "bus_terminal",
+      "lat": 40.852,
+      "lon": -73.9397,
+      "lines": [
+        "bus"
+      ]
+    },
+    {
+      "name": "Port Authority Bus Terminal",
+      "type": "bus_terminal",
+      "lat": 40.7572,
+      "lon": -74.0021,
+      "lines": [
+        "bus"
+      ]
+    }
+  ],
+  "search_data": {
+    "subway_lines": [
+      {
+        "title": "New York City Subway",
+        "url": "https://www.mta.info/map/5256",
+        "snippet": "NJ Transit,. LIRR, Amtrak. Grand Central. 42 St ]. Metro-North, LIRR. Times Sq. 42 St]. 57 St-7 Av ... and is not intended for resale. New York City Subway."
+      },
+      {
+        "title": "Maps",
+        "url": "https://www.mta.info/maps",
+        "snippet": "Downloadable maps for New York transit, including subways, buses, and the Staten Island Railway, plus the Long Island Rail Road, Metro-North Railroad, ..."
+      },
+      {
+        "title": "New York City Subway Large print edition with ...",
+        "url": "https://www.mta.info/map/5341",
+        "snippet": "Subway service may vary by time of day. Call 511 for travel and accessible service information, 24 hours a day. Check mta.info for the most up-to-date list..."
+      }
+    ],
+    "bus_routes": [
+      {
+        "title": "N Manhattan Bus Map",
+        "url": "https://www.mta.info/map/5391",
+        "snippet": "Mar 7, 2026 \u2014 You must pay before boarding. All SBS stops are equipped with fare payment machines. Keep your ticket. Premium service for the cost of a."
+      },
+      {
+        "title": "List of express bus routes in New York City",
+        "url": "https://en.wikipedia.org/wiki/List_of_express_bus_routes_in_New_York_City",
+        "snippet": "The Metropolitan Transportation Authority (MTA) operates 80 express bus routes in New York City, United States. All express routes are assigned..."
+      },
+      {
+        "title": "Governor Kathy Hochul | New York State",
+        "url": "https://www.governor.ny.gov/news/governor-hochul-announces-service-enhancements-24-mta-bus-routes-new-york-city",
+        "snippet": "Dec 17, 2024 \u2014 Governor Hochul announced that the MTA will enhance service on 24 bus routes across New York City beginning this spring in order to help ..."
+      }
+    ],
+    "subway_stops": [
+      {
+        "title": "List of New York City Subway stations",
+        "url": "https://en.wikipedia.org/wiki/List_of_New_York_City_Subway_stations",
+        "snippet": "The New York City Subway is a rapid transit system that serves four of the five boroughs of New York City in the U.S. state of New York: the Bronx,..."
+      },
+      {
+        "title": "Maps",
+        "url": "https://www.mta.info/maps",
+        "snippet": "Downloadable maps for New York transit, including subways, buses, and the Staten Island Railway, plus the Long Island Rail Road, Metro-North Railroad, ..."
+      },
+      {
+        "title": "MTA Subway Stations | State of New York - Open Data NY",
+        "url": "https://data.ny.gov/Transportation/MTA-Subway-Stations/39hk-dx4f",
+        "snippet": "The borough the station is in. Bx for Bronx, B for Brooklyn, M for Manhattan, Q for Queens, SI for Staten Island. Read more."
+      }
+    ],
+    "bus_stops": [
+      {
+        "title": "Port Authority NY NJ Bus Terminals Connections and Maps",
+        "url": "https://www.panynj.gov/bus-terminals/en/port-authority.html",
+        "snippet": "The bus terminal is located in the heart of Manhattan, one block west of Times Square. It occupies the blocks between Eighth and Ninth avenues and 40 and 42..."
+      },
+      {
+        "title": "Port Authority Bus Terminal",
+        "url": "https://en.wikipedia.org/wiki/Port_Authority_Bus_Terminal",
+        "snippet": "The terminal is located in Midtown Manhattan at 625 Eighth Avenue between 40th Street and 42nd Street, one block east of the Lincoln Tunnel and one block west..."
+      },
+      {
+        "title": "Midtown Bus Terminal Main Terminal: Modern NYC Transit ...",
+        "url": "https://www.portauthoritybuilds.com/redevelopment/us/en/mbt/project-components/main-terminal.html",
+        "snippet": "Discover the new Midtown Bus Terminal's Main Terminal\u2013spacious, accessible, and designed for a seamless commuter experience."
+      }
+    ]
+  }
+}
