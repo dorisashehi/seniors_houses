@@ -14,7 +14,6 @@ NIMBLE_API_KEY = os.getenv("NIMBLE_API_KEY")
 NIMBLE_EXTRACT_URL = "https://sdk.nimbleway.com/v1/extract"
 
 CITY = "New York, NY"
-MAX_BUDGET = 3500
 PAGES = 5
 ZILLOW_BASE_URL = "https://www.zillow.com/new-york-ny/rentals/{page}_p/"
 
@@ -90,12 +89,6 @@ def parse_listings(html):
     return listings
 
 
-def filter_by_budget(listings, max_budget):
-    return [
-        l for l in listings
-        if l["price_per_month"] and l["price_per_month"] <= max_budget
-    ]
-
 
 def scrape_all_pages():
     all_listings = []
@@ -126,22 +119,17 @@ def scrape_all_pages():
 
 def main():
     print("=== Zillow Housing Scraper ===")
-    print(f"City:       {CITY}")
-    print(f"Max Budget: ${MAX_BUDGET}/month")
-    print(f"Pages:      {PAGES}\n")
+    print(f"City:  {CITY}")
+    print(f"Pages: {PAGES}\n")
 
     all_listings = scrape_all_pages()
-    affordable = filter_by_budget(all_listings, MAX_BUDGET)
 
     print(f"\nTotal listings found: {len(all_listings)}")
-    print(f"Within budget (≤ ${MAX_BUDGET}/mo): {len(affordable)}")
 
     output = {
         "city": CITY,
-        "max_budget": MAX_BUDGET,
         "scraped_at": datetime.now(timezone.utc).isoformat(),
         "total_found": len(all_listings),
-        "affordable_count": len(affordable),
         "listings": all_listings,
     }
 
