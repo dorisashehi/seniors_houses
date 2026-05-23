@@ -55,9 +55,17 @@ def build_link(card):
     return "https://www.zillow.com" + href if href.startswith("/") else href
 
 
+def clean_address(raw):
+    if raw.lower().startswith("(undisclosed"):
+        # extract the neighborhood/city/zip after the comma
+        parts = raw.split(",", 1)
+        return parts[1].strip() if len(parts) > 1 else raw
+    return raw
+
+
 def parse_card(card):
     address_el = card.find("address")
-    address = address_el.get_text(strip=True) if address_el else "N/A"
+    address = clean_address(address_el.get_text(strip=True)) if address_el else "N/A"
 
     price_el = card.find("span", class_="srp-bueOgM")
     price_text = price_el.get_text(strip=True) if price_el else ""

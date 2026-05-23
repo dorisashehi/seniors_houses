@@ -1,6 +1,6 @@
 {
   "city": "New York, NY",
-  "scraped_at": "2026-05-23T18:49:48.917501+00:00",
+  "scraped_at": "2026-05-23T19:39:03.738771+00:00",
   "total_found": 45,
   "listings": [
     {
@@ -37,7 +37,7 @@
     },
     {
       "address": "111 Worth St, New York, NY",
-      "price_per_month": 5829,
+      "price_per_month": 5841,
       "beds": 1,
       "baths": null,
       "sqft": null,
@@ -125,7 +125,7 @@
     },
     {
       "address": "Waterside | 30 Waterside Plz, New York, NY",
-      "price_per_month": 3972,
+      "price_per_month": 3977,
       "beds": 1,
       "baths": null,
       "sqft": null,
@@ -164,7 +164,7 @@
       "link": "https://www.zillow.com/homedetails/2370-Brigham-St-FLOOR-2-Brooklyn-NY-11229/462378329_zpid/"
     },
     {
-      "address": "(undisclosed Address), College Pt, NY 11356",
+      "address": "College Pt, NY 11356",
       "price_per_month": 2997,
       "beds": 2,
       "baths": 1,
@@ -172,7 +172,7 @@
       "link": "https://www.zillow.com/homedetails/College-Pt-NY-11356/462310972_zpid/"
     },
     {
-      "address": "(undisclosed Address), Whitestone, NY 11357",
+      "address": "Whitestone, NY 11357",
       "price_per_month": 2900,
       "beds": 2,
       "baths": 5,
@@ -180,7 +180,7 @@
       "link": "https://www.zillow.com/homedetails/Whitestone-NY-11357/32029966_zpid/"
     },
     {
-      "address": "(undisclosed Address), Flushing, NY 11357",
+      "address": "Flushing, NY 11357",
       "price_per_month": 3000,
       "beds": 2,
       "baths": 1,
@@ -188,7 +188,7 @@
       "link": "https://www.zillow.com/homedetails/Flushing-NY-11357/32029951_zpid/"
     },
     {
-      "address": "(undisclosed Address), Flushing, NY 11358",
+      "address": "Flushing, NY 11358",
       "price_per_month": 3800,
       "beds": 2,
       "baths": 1,
@@ -218,6 +218,46 @@
       "baths": 1,
       "sqft": 700,
       "link": "https://www.zillow.com/homedetails/626-Pine-St-1-Brooklyn-NY-11208/2057079355_zpid/"
+    },
+    {
+      "address": "1475 Nostrand Ave #3A, Brooklyn, NY 11226",
+      "price_per_month": 2600,
+      "beds": 1,
+      "baths": 1,
+      "sqft": null,
+      "link": "https://www.zillow.com/homedetails/1475-Nostrand-Ave-3A-Brooklyn-NY-11226/2088514966_zpid/"
+    },
+    {
+      "address": "313 E 60th St APT 3D, New York, NY 10022",
+      "price_per_month": 2500,
+      "beds": null,
+      "baths": 1,
+      "sqft": null,
+      "link": "https://www.zillow.com/homedetails/313-E-60th-St-APT-3D-New-York-NY-10022/2093986501_zpid/"
+    },
+    {
+      "address": "21 West St, New York, NY",
+      "price_per_month": 4732,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/21-west-st-new-york-ny-Chgdhn/"
+    },
+    {
+      "address": "110 Horatio St, New York, NY",
+      "price_per_month": 4995,
+      "beds": null,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/110-horatio-st-new-york-ny-ChgfDZ/"
+    },
+    {
+      "address": "445 E 85th St, New York, NY",
+      "price_per_month": 3600,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/1617-york-ave-new-york-ny-CqyFZQ/"
     },
     {
       "address": "5508 7th Ave, Brooklyn, NY",
@@ -252,44 +292,44 @@
       "link": "https://www.zillow.com/homedetails/133-Leonard-St-3C-Brooklyn-NY-11206/462648592_zpid/"
     },
     {
-      "address": "135 Rogers Ave #3B, Brooklyn, NY 11216",
-      "price_per_month": 4000,
-      "beds": 2,
-      "baths": 1,
-      "sqft": null,
-      "link": "https://www.zillow.com/homedetails/135-Rogers-Ave-3B-Brooklyn-NY-11216/462648644_zpid/"
-    },
-    {
-      "address": "82-24 135th St #1, Jamaica, NY 11435",
-      "price_per_month": 2195,
+      "address": "81-07 Kew Gardens Rd #3G, Kew Gardens, NY 11415",
+      "price_per_month": 3300,
       "beds": 1,
       "baths": 1,
       "sqft": null,
-      "link": "https://www.zillow.com/homedetails/82-24-135th-St-1-Jamaica-NY-11435/2078121574_zpid/"
+      "link": "https://www.zillow.com/homedetails/81-07-Kew-Gardens-Rd-3G-Kew-Gardens-NY-11415/346160078_zpid/"
     },
     {
-      "address": "33-78 11th St #2B, Astoria, NY 11106",
-      "price_per_month": 2595,
+      "address": "160 Bleecker St, New York, NY",
+      "price_per_month": 3995,
+      "beds": 2,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/160-bleecker-st-new-york-ny-ChfhHv/"
+    },
+    {
+      "address": "32-45 46th St #3, Astoria, NY 11103",
+      "price_per_month": 2800,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 750,
+      "link": "https://www.zillow.com/homedetails/32-45-46th-St-3-Astoria-NY-11103/2064260485_zpid/"
+    },
+    {
+      "address": "321 W 105th St APT 1B, New York, NY 10025",
+      "price_per_month": 3750,
+      "beds": null,
+      "baths": 1,
+      "sqft": null,
+      "link": "https://www.zillow.com/homedetails/321-W-105th-St-APT-1B-New-York-NY-10025/2082071958_zpid/"
+    },
+    {
+      "address": "520 E 12th St APT 1D, New York, NY 10009",
+      "price_per_month": 3495,
       "beds": 2,
       "baths": 1,
       "sqft": null,
-      "link": "https://www.zillow.com/homedetails/33-78-11th-St-2B-Astoria-NY-11106/2078865547_zpid/"
-    },
-    {
-      "address": "635 W 42nd St, New York, NY",
-      "price_per_month": 4700,
-      "beds": 2,
-      "baths": null,
-      "sqft": null,
-      "link": "https://www.zillow.com/b/atelier-new-york-ny-4Hh3/"
-    },
-    {
-      "address": "252 South St, New York, NY",
-      "price_per_month": 5000,
-      "beds": 1,
-      "baths": null,
-      "sqft": null,
-      "link": "https://www.zillow.com/b/one-manhattan-square-new-york-ny-CpYtsV/"
+      "link": "https://www.zillow.com/homedetails/520-E-12th-St-APT-1D-New-York-NY-10009/2095647421_zpid/"
     },
     {
       "address": "217 E 33rd St, New York, NY",
@@ -322,46 +362,6 @@
       "baths": null,
       "sqft": null,
       "link": "https://www.zillow.com/b/521-decatur-st-brooklyn-ny-3WNy/"
-    },
-    {
-      "address": "2230 Cropsey Ave, Brooklyn, NY",
-      "price_per_month": 2800,
-      "beds": 1,
-      "baths": null,
-      "sqft": null,
-      "link": "https://www.zillow.com/b/sephardic-nursing-and-rehabilitation-center-brooklyn-ny-4nTg/"
-    },
-    {
-      "address": "2110 Frederick Douglass Blvd APT 3D, New York, NY 10026",
-      "price_per_month": 4900,
-      "beds": 2,
-      "baths": 2,
-      "sqft": 1015,
-      "link": "https://www.zillow.com/homedetails/2110-Frederick-Douglass-Blvd-APT-3D-New-York-NY-10026/112518630_zpid/"
-    },
-    {
-      "address": "301 W 110th St APT 2A, New York, NY 10026",
-      "price_per_month": 3600,
-      "beds": 1,
-      "baths": 1,
-      "sqft": 589,
-      "link": "https://www.zillow.com/homedetails/301-W-110th-St-APT-2A-New-York-NY-10026/442176813_zpid/"
-    },
-    {
-      "address": "127 E 7th St, New York, NY",
-      "price_per_month": 8995,
-      "beds": 4,
-      "baths": null,
-      "sqft": null,
-      "link": "https://www.zillow.com/b/127-e-7th-st-new-york-ny-CkLHgr/"
-    },
-    {
-      "address": "1539 Park Pl APT B1, Brooklyn, NY 11213",
-      "price_per_month": 2037,
-      "beds": 1,
-      "baths": 1,
-      "sqft": null,
-      "link": "https://www.zillow.com/homedetails/1539-Park-Pl-APT-B1-Brooklyn-NY-11213/2090513484_zpid/"
     }
   ]
 }
