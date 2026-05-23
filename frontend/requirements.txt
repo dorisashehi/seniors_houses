@@ -1,3 +1,5 @@
-flask>=3.0.0
-anthropic>=0.30.0
-requests>=2.31.0
+flask==3.0.3
+beautifulsoup4==4.12.3
+requests==2.32.3
+python-dotenv==1.0.1
+clickhouse-connect>=0.7

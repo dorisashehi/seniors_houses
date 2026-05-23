@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura — Your AI NYC Housing Concierge</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Accents for Modern Ambient Glow -->
+    <div class="glow-bg-1"></div>
+    <div class="glow-bg-2"></div>
+
+    <!-- Header Navigation -->
+    <header class="app-header">
+        <div class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-compass-drafting"></i></span>
+            <span class="logo-text">aura</span>
+            <span class="logo-badge">AI Housing Concierge</span>
+        </div>
+        <div class="header-actions">
+            <button id="reset-wizard-btn" class="btn btn-secondary btn-sm" style="display: none;">
+                <i class="fa-solid fa-arrows-rotate"></i> New Consultation
+            </button>
+            <div class="mode-badge" id="app-mode-badge">
+                <span class="dot pulse-emerald"></span> Demo Dataset Active
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="app-container">
+        
+        <!-- ================= LANDING SCREEN ================= -->
+        <section id="landing-screen" class="active-screen">
+            <div class="hero-content">
+                <div class="hero-tag">NYC Living, Redefined</div>
+                <h1 class="hero-title">Navigate NYC's Housing Market with Confidence</h1>
+                <p class="hero-description">
+                    Making city living accessible to all. Get your personal AI Housing Concierge—built to understand your budget, lifestyle, family needs, and dreams, matching you with the perfect home.
+                </p>
+                <div class="hero-buttons">
+                    <button id="start-consultation-btn" class="btn btn-primary btn-lg">
+                        Start AI Consultation <i class="fa-solid fa-arrow-right icon-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Visual Features Grid -->
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-coins"></i></div>
+                    <h3>Smart Budgeting</h3>
+                    <p>Matches listings strictly within your budget up to $2,000, factoring in outer-borough value properties.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-route"></i></div>
+                    <h3>Commute Optimized</h3>
+                    <p>Learns where you work or volunteer to score travel convenience, transit proximity, and subway paths.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fa-solid fa-compass"></i></div>
+                    <h3>Lifestyle Tailored</h3>
+                    <p>Prioritizes green spaces, night scenes, quiet blocks, or spacious floorplans depending on what you love.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= WIZARD ONBOARDING SCREEN ================= -->
+        <section id="wizard-screen" class="hidden-screen">
+            <div class="wizard-panel glass-panel">
+                <!-- Wizard Header -->
+                <div class="wizard-header">
+                    <div class="progress-container">
+                        <div class="progress-bar" id="wizard-progress"></div>
+                    </div>
+                    <div class="step-indicator">Question <span id="current-step-num">1</span> of 4</div>
+                </div>
+
+                <!-- Wizard Form Content -->
+                <div class="wizard-body">
+                    
+                    <!-- Question 1: Budget -->
+                    <div class="wizard-step active-step" data-step="1">
+                        <h2>What's your monthly rental budget?</h2>
+                        <p class="step-subtitle">Aura finds the best properties in NYC under your budget ceiling.</p>
+                        
+                        <div class="budget-slider-wrapper">
+                            <div class="budget-display">$<span id="budget-val">1600</span>/month</div>
+                            <input type="range" min="800" max="3000" value="1600" step="50" class="slider" id="budget-range">
+                            <div class="slider-labels">
+                                <span>$800</span>
+                                <span class="highlight-label">NYC Limit: $2,000</span>
+                                <span>$3,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2: Public Transportation -->
+                    <div class="wizard-step" data-step="2">
+                        <h2>Do you need easy access to public transportation?</h2>
+                        <p class="step-subtitle">Essential for quick subway and bus lines across the outer boroughs.</p>
+                        
+                        <div class="toggle-cards-container">
+                            <label class="toggle-card">
+                                <input type="radio" name="transit-pref" value="yes" checked>
+                                <div class="card-content">
+                                    <div class="card-icon"><i class="fa-solid fa-train-subway"></i></div>
+                                    <h3>Yes, Transit is Critical</h3>
+                                    <p>I rely on subways and buses. Keep me within short walking distance to major routes.</p>
+                                </div>
+                            </label>
+                            
+                            <label class="toggle-card">
+                                <input type="radio" name="transit-pref" value="no">
+                                <div class="card-content">
+                                    <div class="card-icon"><i class="fa-solid fa-person-walking"></i></div>
+                                    <h3>Not a Priority</h3>
+                                    <p>I work remotely, bike, or drive. Proximity to transit stations isn't my primary concern.</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 3: Lifestyle Core Preference -->
+                    <div class="wizard-step" data-step="3">
+                        <h2>What do you care about most in a neighborhood?</h2>
+                        <p class="step-subtitle">Choose the core theme that defines your ideal home environment.</p>
+                        
+                        <div class="selection-grid">
+                            <label class="select-pill">
+                                <input type="radio" name="lifestyle-pref" value="space" checked>
+                                <span class="pill-btn"><i class="fa-solid fa-maximize"></i> More Space (Beds/Sqft)</span>
+                            </label>
+                            <label class="select-pill">
+                                <input type="radio" name="lifestyle-pref" value="park">
+                                <span class="pill-btn"><i class="fa-solid fa-tree"></i> Close to Parks / Water</span>
+                            </label>
+                            <label class="select-pill">
+                                <input type="radio" name="lifestyle-pref" value="nightlife">
+                                <span class="pill-btn"><i class="fa-solid fa-glass-martini-alt"></i> Vibrant Nightlife</span>
+                            </label>
+                            <label class="select-pill">
+                                <input type="radio" name="lifestyle-pref" value="quiet">
+                                <span class="pill-btn"><i class="fa-solid fa-volume-mute"></i> Peace & Quiet</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question 4: Borough Preferences -->
+                    <div class="wizard-step" data-step="4">
+                        <h2>Which boroughs do you prefer?</h2>
+                        <p class="step-subtitle">Choose one or keep it open to all boroughs to discover hidden values.</p>
+                        
+                        <div class="selection-grid text-center">
+                            <label class="select-pill select-pill-lg">
+                                <input type="radio" name="borough-pref" value="all" checked>
+                                <span class="pill-btn"><i class="fa-solid fa-city"></i> Open to All Boroughs</span>
+                            </label>
+                            <label class="select-pill select-pill-lg">
+                                <input type="radio" name="borough-pref" value="Manhattan">
+                                <span class="pill-btn">Manhattan</span>
+                            </label>
+                            <label class="select-pill select-pill-lg">
+                                <input type="radio" name="borough-pref" value="Brooklyn">
+                                <span class="pill-btn">Brooklyn</span>
+                            </label>
+                            <label class="select-pill select-pill-lg">
+                                <input type="radio" name="borough-pref" value="Queens">
+                                <span class="pill-btn">Queens</span>
+                            </label>
+                            <label class="select-pill select-pill-lg">
+                                <input type="radio" name="borough-pref" value="Bronx">
+                                <span class="pill-btn">Bronx</span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Wizard Footer Navigation Buttons -->
+                <div class="wizard-footer">
+                    <button id="prev-btn" class="btn btn-secondary disabled-btn" disabled>
+                        <i class="fa-solid fa-arrow-left icon-left"></i> Back
+                    </button>
+                    <button id="next-btn" class="btn btn-primary">
+                        Next <i class="fa-solid fa-arrow-right icon-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= LOADING SCREEN ================= -->
+        <section id="loading-screen" class="hidden-screen">
+            <div class="loading-panel">
+                <div class="concierge-avatar-loading">
+                    <div class="avatar-glow"></div>
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <h2>Aura is processing your housing profile...</h2>
+                <div class="loading-steps">
+                    <div class="loading-step active-loading-step" id="loading-step-1">
+                        <span class="loader-circle"></span> Customizing living filters...
+                    </div>
+                    <div class="loading-step" id="loading-step-2">
+                        <span class="loader-circle"></span> Activating Zillow scraper engines...
+                    </div>
+                    <div class="loading-step" id="loading-step-3">
+                        <span class="loader-circle"></span> Scoring transit and neighborhood options...
+                    </div>
+                    <div class="loading-step" id="loading-step-4">
+                        <span class="loader-circle"></span> Generating final AI Housing Report...
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= DASHBOARD SCREEN ================= -->
+        <section id="dashboard-screen" class="hidden-screen">
+            <div class="dashboard-grid">
+                
+                <!-- Left Sidebar: AI Concierge Report -->
+                <div class="dashboard-sidebar glass-panel">
+                    <div class="sidebar-header">
+                        <div class="concierge-badge">
+                            <div class="avatar-small"><i class="fa-solid fa-robot"></i></div>
+                            <div>
+                                <h4>Aura AI</h4>
+                                <span class="status-online">Online Concierge</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Concierge Report Content (renders Markdown from Backend) -->
+                    <div class="sidebar-report-body scrollable-content" id="concierge-report-content">
+                        <!-- Filled dynamically -->
+                    </div>
+                </div>
+
+                <!-- Right Pane: Listings & Matches -->
+                <div class="dashboard-listings-pane">
+                    <div class="pane-header">
+                        <div class="results-meta">
+                            <h2>Perfect NYC Rental Matches</h2>
+                            <p>We found <span id="results-count" class="badge-accent">0</span> listings matching your exact housing accessibility goals.</p>
+                        </div>
+                        
+                        <!-- Toggle views or sorting (optional decoration) -->
+                        <div class="listing-filters">
+                            <span class="filter-pill active-pill"><i class="fa-solid fa-star"></i> Ranked by Match %</span>
+                        </div>
+                    </div>
+
+                    <!-- Listings Cards Grid -->
+                    <div class="listings-grid scrollable-content" id="listings-cards-container">
+                        <!-- Filled dynamically -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- ================= MATCH SCORES BREAKDOWN MODAL ================= -->
+    <div id="score-breakdown-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <div class="modal-header">
+                <h2>Apartment Compatibility Index</h2>
+                <button class="close-modal-btn" id="close-modal-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-apartment-summary">
+                    <h3 id="modal-apt-address">Apartment Address</h3>
+                    <div class="modal-overall-wrapper">
+                        <div class="modal-overall-score" id="modal-apt-score">95%</div>
+                        <div>Compatibility Index</div>
+                    </div>
+                </div>
+
+                <div class="score-bars-container">
+                    <!-- Dynamic score progress bars -->
+                    <div class="score-bar-group">
+                        <div class="bar-label">
+                            <span><i class="fa-solid fa-coins"></i> Budget Comfort</span>
+                            <span id="score-val-budget">95%</span>
+                        </div>
+                        <div class="bar-outer"><div class="bar-inner bg-emerald" id="score-bar-budget" style="width: 95%;"></div></div>
+                    </div>
+
+                    <div class="score-bar-group">
+                        <div class="bar-label">
+                            <span><i class="fa-solid fa-city"></i> Borough Priority</span>
+                            <span id="score-val-borough">100%</span>
+                        </div>
+                        <div class="bar-outer"><div class="bar-inner bg-blue" id="score-bar-borough" style="width: 100%;"></div></div>
+                    </div>
+
+                    <div class="score-bar-group">
+                        <div class="bar-label">
+                            <span><i class="fa-solid fa-train-subway"></i> Transit Proximity</span>
+                            <span id="score-val-transit">90%</span>
+                        </div>
+                        <div class="bar-outer"><div class="bar-inner bg-purple" id="score-bar-transit" style="width: 90%;"></div></div>
+                    </div>
+
+                    <div class="score-bar-group">
+                        <div class="bar-label">
+                            <span><i class="fa-solid fa-compass"></i> Lifestyle Alignment</span>
+                            <span id="score-val-lifestyle">85%</span>
+                        </div>
+                        <div class="bar-outer"><div class="bar-inner bg-gold" id="score-bar-lifestyle" style="width: 85%;"></div></div>
+                        <p class="score-bar-detail" id="score-detail-lifestyle">Lifestyle preference explanation goes here.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

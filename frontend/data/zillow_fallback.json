@@ -1,0 +1,369 @@
+{
+  "city": "New York, NY",
+  "max_budget": 3500,
+  "scraped_at": "2026-05-23T18:18:14.352665+00:00",
+  "total_found": 45,
+  "affordable_count": 17,
+  "listings": [
+    {
+      "address": "Trylon Tower | 98-81 Queens Blvd, Rego Park, NY",
+      "price_per_month": 3000,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/apartments/rego-park-ny/trylon-tower/Cm45hD/"
+    },
+    {
+      "address": "580 Gerard Ave, Bronx, NY",
+      "price_per_month": 3224,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/apartments/bronx-ny/inkwell/97T7F9/"
+    },
+    {
+      "address": "Staten Island Urby, 7 Navy Pier Ct Unit 3055, Staten Island, NY 10304",
+      "price_per_month": 2234,
+      "beds": null,
+      "baths": 1,
+      "sqft": 414,
+      "link": "https://www.zillow.com/apartments/staten-island-ny/staten-island-urby/CkCgG9/"
+    },
+    {
+      "address": "Riverbank | 560 W 43rd St, New York, NY",
+      "price_per_month": 3648,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/apartments/new-york-ny/riverbank/5Xj5k4/"
+    },
+    {
+      "address": "111 Worth St, New York, NY",
+      "price_per_month": 5829,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/apartments/new-york-ny/111-worth/5XjYSJ/"
+    },
+    {
+      "address": "Shorecrest Towers, 3000 Ocean Pkwy APT 4D, Brooklyn, NY 11235",
+      "price_per_month": 3600,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1130,
+      "link": "https://www.zillow.com/apartments/brooklyn-ny/shorecrest-towers/53WW/"
+    },
+    {
+      "address": "Shorecrest Towers, 3000 Ocean Pkwy APT 18N, Brooklyn, NY 11235",
+      "price_per_month": 3950,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1130,
+      "link": "https://www.zillow.com/apartments/brooklyn-ny/shorecrest-towers/53WW/"
+    },
+    {
+      "address": "The Monarch | 92-33 Guy R Brewer Blvd, Jamaica, NY",
+      "price_per_month": 2775,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/apartments/jamaica-ny/the-monarch/CqWR4H/"
+    },
+    {
+      "address": "Sky Three | 532 Neptune Ave, Brooklyn, NY",
+      "price_per_month": 3400,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/apartments/brooklyn-ny/sky-three/Cknr6R/"
+    },
+    {
+      "address": "60 W 66th St, New York, NY",
+      "price_per_month": 5804,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/apartments/manhattan-ny/two-lincoln-square/Ch2dnY/"
+    },
+    {
+      "address": "AVA High Line | 525 W 28th St, New York, NY",
+      "price_per_month": 4570,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/apartments/new-york-ny/ava-high-line/4MH7/"
+    },
+    {
+      "address": "The Aldyn | 60 Riverside Blvd, New York, NY",
+      "price_per_month": 4155,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/apartments/new-york-ny/the-aldyn/2BHy/"
+    },
+    {
+      "address": "The Ashley | 400 W 63rd St, New York, NY",
+      "price_per_month": 4561,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/apartments/new-york-ny/the-ashley/5Xj4Ns/"
+    },
+    {
+      "address": "Gateway | 389 S End Ave, New York, NY",
+      "price_per_month": 4400,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/apartments/new-york-ny/gateway/5XjY8c/"
+    },
+    {
+      "address": "Archer House, 148-37 88th Ave #806, Jamaica, NY 11435",
+      "price_per_month": 3500,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 900,
+      "link": "https://www.zillow.com/apartments/jamaica-ny/archer-house/CkBRRF/"
+    },
+    {
+      "address": "Waterside | 30 Waterside Plz, New York, NY",
+      "price_per_month": 3972,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/apartments/new-york-ny/waterside/CgHCwZ/"
+    },
+    {
+      "address": "Marquis West Side | 70 W 95th St, New York, NY",
+      "price_per_month": 9999,
+      "beds": 2,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/apartments/new-york-ny/marquis-west-side/5XjMc6/"
+    },
+    {
+      "address": "Avalon Midtown West | 250 W 50th St, New York, NY",
+      "price_per_month": 3972,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/apartments/new-york-ny/avalon-midtown-west/5XVMHG/"
+    },
+    {
+      "address": "2 Leroy St, Staten Island, NY 10314",
+      "price_per_month": 2670,
+      "beds": 1,
+      "baths": 1,
+      "sqft": 1100,
+      "link": "https://www.zillow.com/homedetails/2-Leroy-St-Staten-Island-NY-10314/32317713_zpid/"
+    },
+    {
+      "address": "9130 175th St Floor 2, Jamaica, NY 11432",
+      "price_per_month": 3200,
+      "beds": 3,
+      "baths": 5,
+      "sqft": null,
+      "link": "https://www.zillow.com/homedetails/9130-175th-St-FLOOR-2-Jamaica-NY-11432/2078518820_zpid/"
+    },
+    {
+      "address": "(undisclosed Address), Whitestone, NY 11357",
+      "price_per_month": 2900,
+      "beds": 2,
+      "baths": 5,
+      "sqft": 3556,
+      "link": "https://www.zillow.com/homedetails/Whitestone-NY-11357/32029966_zpid/"
+    },
+    {
+      "address": "18-81 Suydam St #1, Ridgewood, NY 11385",
+      "price_per_month": 6200,
+      "beds": 4,
+      "baths": 5,
+      "sqft": 1278,
+      "link": "https://www.zillow.com/homedetails/18-81-Suydam-St-1-Ridgewood-NY-11385/2077973788_zpid/"
+    },
+    {
+      "address": "136-20 Booth Memorial Ave #3G, Flushing, NY 11355",
+      "price_per_month": 3800,
+      "beds": 2,
+      "baths": 2,
+      "sqft": 1300,
+      "link": "https://www.zillow.com/homedetails/136-20-Booth-Memorial-Ave-3G-Flushing-NY-11355/2071180431_zpid/"
+    },
+    {
+      "address": "(undisclosed Address), Flushing, NY 11357",
+      "price_per_month": 3000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 3519,
+      "link": "https://www.zillow.com/homedetails/Flushing-NY-11357/32029951_zpid/"
+    },
+    {
+      "address": "(undisclosed Address), Bronx, NY 10464",
+      "price_per_month": 1850,
+      "beds": 1,
+      "baths": 1,
+      "sqft": 600,
+      "link": "https://www.zillow.com/homedetails/Bronx-NY-10464/462564027_zpid/"
+    },
+    {
+      "address": "17333 Grand Central Pkwy, Jamaica, NY 11432",
+      "price_per_month": 5000,
+      "beds": 5,
+      "baths": 5,
+      "sqft": 2600,
+      "link": "https://www.zillow.com/homedetails/17333-Grand-Central-Pkwy-Jamaica-NY-11432/32077457_zpid/"
+    },
+    {
+      "address": "2126 Chatterton Ave, Bronx, NY",
+      "price_per_month": 4011,
+      "beds": 4,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/2126-chatterton-ave-bronx-ny-2gLx/"
+    },
+    {
+      "address": "635 W 42nd St, New York, NY",
+      "price_per_month": 4700,
+      "beds": 2,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/atelier-new-york-ny-4Hh3/"
+    },
+    {
+      "address": "252 South St, New York, NY",
+      "price_per_month": 5000,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/one-manhattan-square-new-york-ny-CpYtsV/"
+    },
+    {
+      "address": "1 Manhattan Sq, New York, NY",
+      "price_per_month": 5300,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/1-manhattan-sq-new-york-ny-BgybFF/"
+    },
+    {
+      "address": "1 N 4th Pl APT 22H, Brooklyn, NY 11249",
+      "price_per_month": 4283,
+      "beds": null,
+      "baths": 1,
+      "sqft": 500,
+      "link": "https://www.zillow.com/homedetails/1-N-4th-Pl-APT-22H-Brooklyn-NY-11249/2101461033_zpid/"
+    },
+    {
+      "address": "30-87 Steinway St, Astoria, NY",
+      "price_per_month": 3200,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/30-87-steinway-st-astoria-ny/40.761658,-73.91662_ll/"
+    },
+    {
+      "address": "200 W 20th St, New York, NY",
+      "price_per_month": 4500,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/kensington-house-new-york-ny-2764/"
+    },
+    {
+      "address": "180 Ashland Pl, Brooklyn, NY",
+      "price_per_month": 3805,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/98-dekalb-ave-brooklyn-ny-CnhWRX/"
+    },
+    {
+      "address": "33-29 Astoria Blvd N #2C, Astoria, NY 11103",
+      "price_per_month": 3750,
+      "beds": 2,
+      "baths": 1,
+      "sqft": null,
+      "link": "https://www.zillow.com/homedetails/33-29-Astoria-Blvd-N-2C-Astoria-NY-11103/462648520_zpid/"
+    },
+    {
+      "address": "410 W 53rd St, New York, NY",
+      "price_per_month": 4241,
+      "beds": 1,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/410-w-53rd-st-new-york-ny-Chfp9M/"
+    },
+    {
+      "address": "1948 Bay Ridge Ave, Brooklyn, NY 11204",
+      "price_per_month": 3000,
+      "beds": 3,
+      "baths": 1,
+      "sqft": 1300,
+      "link": "https://www.zillow.com/homedetails/1948-Bay-Ridge-Ave-Brooklyn-NY-11204/30702920_zpid/"
+    },
+    {
+      "address": "130-34 129th St #2, South Ozone Park, NY 11420",
+      "price_per_month": 3500,
+      "beds": 3,
+      "baths": 1,
+      "sqft": null,
+      "link": "https://www.zillow.com/homedetails/130-34-129th-St-2-South-Ozone-Park-NY-11420/2066663407_zpid/"
+    },
+    {
+      "address": "8715 165th St APT 5L, Jamaica, NY 11432",
+      "price_per_month": 1800,
+      "beds": null,
+      "baths": 1,
+      "sqft": null,
+      "link": "https://www.zillow.com/homedetails/8715-165th-St-APT-5L-Jamaica-NY-11432/245373637_zpid/"
+    },
+    {
+      "address": "1242 Boynton Ave, Bronx, NY",
+      "price_per_month": 3777,
+      "beds": 3,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/1242-boynton-ave-bronx-ny-97TyRN/"
+    },
+    {
+      "address": "1623 66th St, Brooklyn, NY",
+      "price_per_month": 2850,
+      "beds": 2,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/1623-66th-st-brooklyn-ny-97b4XB/"
+    },
+    {
+      "address": "23702 Edmore Ave #1, Bellerose, NY 11426",
+      "price_per_month": 3795,
+      "beds": 4,
+      "baths": 5,
+      "sqft": null,
+      "link": "https://www.zillow.com/homedetails/23702-Edmore-Ave-1-Bellerose-NY-11426/2059539574_zpid/"
+    },
+    {
+      "address": "1500 Rosedale Ave Floor 2, Bronx, NY 10460",
+      "price_per_month": 4435,
+      "beds": 5,
+      "baths": 1,
+      "sqft": null,
+      "link": "https://www.zillow.com/homedetails/1500-Rosedale-Ave-FLOOR-2-Bronx-NY-10460/2056961031_zpid/"
+    },
+    {
+      "address": "1421 Bell Blvd Floor 2, Bayside, NY 11360",
+      "price_per_month": 3800,
+      "beds": 3,
+      "baths": 2,
+      "sqft": 1250,
+      "link": "https://www.zillow.com/homedetails/1421-Bell-Blvd-FLOOR-2-Bayside-NY-11360/461765140_zpid/"
+    },
+    {
+      "address": "1268 E 92nd St, Brooklyn, NY",
+      "price_per_month": 3400,
+      "beds": 3,
+      "baths": null,
+      "sqft": null,
+      "link": "https://www.zillow.com/b/1268-e-92nd-st-brooklyn-ny-9PNV3F/"
+    }
+  ]
+}

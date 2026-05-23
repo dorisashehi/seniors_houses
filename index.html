@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SeniorGuide AI</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: #1a365d;
+    }
+
+    header p {
+      color: #4a5568;
+      font-size: 1.1rem;
+      margin-top: 8px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 36px;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      color: #2d3748;
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      font-size: 1rem;
+      color: #2d3748;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    input[type="number"]:focus,
+    select:focus {
+      border-color: #3182ce;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+    }
+
+    .checkbox-item input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: #3182ce;
+      cursor: pointer;
+    }
+
+    .checkbox-item span {
+      font-size: 1rem;
+      color: #2d3748;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 14px;
+      background: #3182ce;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 8px;
+    }
+
+    button[type="submit"]:hover { background: #2b6cb0; }
+    button[type="submit"]:disabled { background: #a0aec0; cursor: not-allowed; }
+
+    #result {
+      margin-top: 32px;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .result-card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 32px;
+      white-space: pre-wrap;
+      line-height: 1.8;
+      color: #2d3748;
+      font-size: 1rem;
+    }
+
+    .loading {
+      text-align: center;
+      color: #3182ce;
+      font-size: 1rem;
+      padding: 20px;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .error {
+      color: #e53e3e;
+      background: #fff5f5;
+      border: 1px solid #fed7d7;
+      border-radius: 10px;
+      padding: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🏠 SeniorGuide AI</h1>
+    <p>Find the perfect home in New York — tailored for you</p>
+  </header>
+
+  <div class="card">
+    <form id="profileForm">
+
+      <div class="form-group">
+        <label for="budget">Monthly budget (USD)</label>
+        <input type="number" id="budget" name="budget" min="500" max="20000"
+               placeholder="e.g. 3500" required />
+      </div>
+
+      <div class="form-group">
+        <label for="beds">Bedrooms needed</label>
+        <select id="beds" name="beds">
+          <option value="0">Studio / No preference</option>
+          <option value="1">1 Bedroom</option>
+          <option value="2">2 Bedrooms</option>
+          <option value="3">3+ Bedrooms</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="borough">Preferred borough</label>
+        <select id="borough" name="borough">
+          <option value="">No preference</option>
+          <option value="Manhattan">Manhattan</option>
+          <option value="Brooklyn">Brooklyn</option>
+          <option value="Queens">Queens</option>
+          <option value="Bronx">Bronx</option>
+          <option value="Staten Island">Staten Island</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Lifestyle needs</label>
+        <div class="checkbox-group">
+          <label class="checkbox-item">
+            <input type="checkbox" id="hospital" name="hospital" />
+            <span>I need to be close to a hospital</span>
+          </label>
+          <label class="checkbox-item">
+            <input type="checkbox" id="transit" name="transit" />
+            <span>I need good public transit (bus / subway)</span>
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" id="submitBtn">Find My Home</button>
+    </form>
+  </div>
+
+  <div id="result"></div>
+
+  <script>
+    const form = document.getElementById('profileForm');
+    const resultDiv = document.getElementById('result');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Searching...';
+      resultDiv.innerHTML = '<div class="loading">SeniorGuide AI is finding your best options...</div>';
+
+      const payload = {
+        max_budget: parseInt(document.getElementById('budget').value),
+        min_beds: parseInt(document.getElementById('beds').value),
+        borough: document.getElementById('borough').value,
+        need_hospital: document.getElementById('hospital').checked,
+        need_transit: document.getElementById('transit').checked,
+      };
+
+      try {
+        const res = await fetch('/api/recommend', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+
+        const data = await res.json();
+
+        resultDiv.innerHTML = `<div class="result-card">${data.recommendation}</div>`;
+      } catch (err) {
+        resultDiv.innerHTML = `<div class="error">Something went wrong. Please try again.</div>`;
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Find My Home';
+      }
+    });
+  </script>
+
+</body>
+</html>
